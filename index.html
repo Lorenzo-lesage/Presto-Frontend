@@ -19,7 +19,7 @@
     <!-- NAVBAR -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top transition">
         <div class="container-fluid">
-          <a class="navbar-brand d-flex justify-content-center align-items-center text-center" href="#">
+          <a class="navbar-brand d-flex justify-content-center align-items-center text-center  navCustom" href="#">
             <img src="./media/logo2.png" alt="" id="navbar-brand" class="logo1">
             <p class="m-0">Home</p>
           </a>
@@ -29,13 +29,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Autoobili</a>
+                <a class="nav-link navCustom" href="#">Autoobili</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link navCustom" href="#">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contatti</a>
+                <a class="nav-link navCustom" href="#">Contatti</a>
               </li>
             </ul>
           </div>
@@ -43,10 +43,45 @@
       </nav>
     <!-- /NAVBAR -->
 
+    <!-- SEZIONE CAROSELLO -->
+    <div class="container-fluid my-3">
+        <div class="row">
+            <div class="col-12 p-0">
+                <!-- CAROUSEL -->
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                    data-bs-pause="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active slide-1" data-bs-interval="2000"> <!-- SLIDE 1 -->
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="title display-1">Super Car</h5>
+                              <p class="title fs-3">Some representative placeholder content for the first slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item slide-2" data-bs-interval="2000"> <!-- SLIDE 3-->
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="title display-1">Auto d'epoca</h5>
+                              <p class="title fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item slide-3" data-bs-interval="2000"> <!-- SLIDE 3 -->
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 class="title display-1">Suv</h5>
+                              <p class="title fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                
+                <!-- /CAROUSEL -->
+            </div>
+        </div>
+    </div>
+    <!-- /SEZIONE CAROSELLO -->
+
     <!-- HEADER -->
-     <header class="container-fluid my-5">
+     <header class="container-fluid mb-5">
         <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center text-center p-5" data-aos="fade-right" data-aos-delay="600">
+            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center text-center p-5" data-aos="fade-right" data-aos-delay="300">
                 <h1 class="display-2 title">LOREM IPSUM DOLOR LOREM</h1>
                 <p class="my-5 fs-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facere aspernatur numquam rem eaque. Error illo cupiditate eius reiciendis mollitia unde quis beatae nisi natus rerum? Aspernatur distinctio quo consequuntur.
@@ -57,7 +92,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 p-5">
-                <img src="https://picsum.photos/200" alt="" class="w-100" data-aos="fade-left" data-aos-delay="600">
+                <img src="https://picsum.photos/200" alt="" class="w-100 imgHeader" data-aos="fade-left" data-aos-delay="500">
             </div>
         </div>
      </header>
@@ -120,7 +155,7 @@
                 <div class="cat-bg" data-aos="fade-left" data-aos-delay="400">
                 </div>
             </div>
-            <div class="col-6 col-md-5 p-md-5 mb-2">
+            <div class="col-6 col-md-5 p-md-5 mb-5">
                 <div class="box-category" data-aos="fade-right" data-aos-delay="600">
                     <h3>CAT-6</h3>
                 </div>
