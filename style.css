@@ -1,0 +1,72 @@
+:root {
+    --color-p: rgb(105, 161, 151);
+    --color-s: rgb(38, 20, 71);
+    --color-a: white;
+}
+
+.title {
+    font-family: "Bebas Neue", serif;
+    color: var(--color-s);
+  }
+  
+
+* {
+  font-family: "Open Sans", serif;
+}
+
+body {
+    background-color: var(--color-p);
+    color: var(--color-a);
+}
+
+.transition {
+    transition: 0.5s;
+}
+
+/* NAVBAR */
+.logo1 {
+    width: 50px;
+}
+
+nav {
+ color: rgb(38, 20, 71)!important;
+}
+
+.nav-scrolled {
+    margin: 5vh 15vw;
+    border: 2px solid var(--color-a);
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+/* SEZIONE CATEGORIE */
+.blood-shadow {
+    text-shadow: 2px 2px 5px var(--color-s);
+    border-bottom: 5px solid var(--color-s);
+}
+
+.box-category {
+    margin-top: 10vh;
+    background-color: var(--color-p);
+    aspect-ratio: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px 5px 5px var(--color-s);
+    border-radius: 2%;
+
+}
+
+.cat-bg {
+    margin-top: 10vh;
+    width: 100%;
+    aspect-ratio: 1.5;
+    background: linear-gradient(rgba(6, 24, 21, 0.446),transparent, rgba(105, 161, 151, 0.44)), url(https://picsum.photos/200);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+    box-shadow: 5px 5px 5px var(--color-s);
+
+}
