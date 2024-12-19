@@ -108,15 +108,15 @@ let cardsWrapper  = document.querySelector("#cardsWrapper")
 cars.forEach( (car, i) => {
     if(i >= cars.length - 3){
         let div = document.createElement("div")
-        div.classList.add("col-12", "col-md-3")
+        div.classList.add("col-12", "col-md-4")
         div.innerHTML = `
-                            <div class="card my-2 p-2 text-center">
+                            <div class="card-custom my-2 text-center">
                                 <img src=${car.img} class="card-img-top img-last-cars" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Marca: ${car.Marca}</h5>
+                                    <h5 class="card-title my-3">Marca: ${car.Marca}</h5>
                                     <p class="card-text">Modello: ${car.Modello}</p>
-                                    <p class="card-text">Prezzo: ${car.Prezzo}</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text">Prezzo: $ ${car.Prezzo}</p>
+                                    <button class="elegant-btn">Acquista</button>
                                 </div>
                             </div>
         `

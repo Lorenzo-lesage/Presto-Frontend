@@ -118,8 +118,20 @@ body {
 .img-last-cars {
     height: 350px;
     background-position: center;
+    border: 2px solid var(--color-s);
+    border-radius: 5px 30px 0 0;
+    box-shadow: 2px 2px 5px var(--color-s);
 }
 
+.card-custom {
+    background-color: var(--color-s);
+    color: var(--color-a);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 5px 30px 5px 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin: 0 1vw;
+}
 /* SEZIONE CATEGORIE */
 .blood-shadow {
     text-shadow: 2px 2px 5px var(--color-s);
@@ -127,10 +139,7 @@ body {
 }
 
 .box-category {
-    background: linear-gradient(rgb(105, 161, 151, 0.6),rgb(105, 161, 151, 0.6)), url(./media/mercedes.png);
-    background-position: center;
-    background-size: cover;
-    color: var(--color-a);
+    color: var(--color-s);
     margin-top: 5vh;
     background-color: var(--color-p);
     aspect-ratio: 1;
@@ -143,8 +152,49 @@ body {
 
 }
 
+.box-superCar {
+    background: linear-gradient(rgb(105, 161, 151, 0.4),rgb(105, 161, 151, 0.4)), url(./media/lusso.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.box-superCar1 {
+    background: linear-gradient(rgb(105, 161, 151, 0.4),rgb(105, 161, 151, 0.4)), url(./media/superCarBg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.box-superCar2 {
+    background: linear-gradient(rgb(105, 161, 151, 0.4),rgb(105, 161, 151, 0.4)), url(./media/epoca.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.box-superCar3 {
+    background: linear-gradient(rgb(105, 161, 151, 0.4),rgb(105, 161, 151, 0.4)), url(./media/suvBg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.box-superCar4 {
+    background: linear-gradient(rgb(105, 161, 151, 0.4),rgb(105, 161, 151, 0.4)), url(./media/elettriche.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.box-superCar5 {
+    background: linear-gradient(rgb(105, 161, 151, 0.4),rgb(105, 161, 151, 0.4)), url(./media/usato.png);
+    background-position: center;
+    background-size: cover;
+}
+
 .box-category > h3 {
-    font-size: calc(10px + 1,5vw);
+    font-size: calc(10px + 2vw);
+    text-shadow: 2px 2px 5px white;
+    font-family: "Bebas Neue", serif;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
 }
 
 /* SEZIONE NUMERI */
@@ -153,14 +203,12 @@ body {
     background: linear-gradient(90deg, rgb(105, 161, 151), rgb(105, 161, 151, 0.6)), url(./media/bgNostriNum.png);
     background-size: cover;
     background-position: bottom;
-    padding-left: 10vw;
 }
 
 .box-numeri {
     height: 150px;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
-    border: 2px solid var(--color-a);
     border-radius: 10px;
     text-align: center;
     color: var(--color-a);
@@ -168,6 +216,8 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 /* MEDIA QUERIES */
