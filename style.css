@@ -19,6 +19,13 @@ body {
     color: var(--color-s);
 }
 
+.body-bg {
+    background: linear-gradient( rgb(105, 161, 151) 10%, rgb(105, 161, 151, 0.8) 100%), url(./media/mercedes.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .transition {
     transition: 0.5s;
 }
@@ -35,25 +42,24 @@ body {
 .nav-scrolled {
     margin: 5vh 15vw;
     border: 2px solid var(--color-s);
-    border-radius: 50px;
+    border-radius: 20px;
     backdrop-filter: blur(50px);
-    background-color: rgba(0, 0, 0, 0.342);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 
 /* SEZIONE CAROSELLO */
 
 .slide-1 {
-    background: linear-gradient(var(--color-p), transparent, var(--color-p)), url(./media/auto1.png);
+    background: linear-gradient(var(--color-p), transparent, rgb(105, 161, 151)), url(./media/supercar.png);
 }
 
 
 .slide-2 {
-    background: linear-gradient(var(--color-p), transparent, var(--color-p)), url(./media/autoEpoca.png);
+    background: linear-gradient(var(--color-p), transparent, rgb(105, 161, 151)), url(./media/autoepoca.png);
 }
 
 .slide-3 {
-    background: linear-gradient(var(--color-p), transparent, var(--color-p)), url(./media/suv.png);
+    background: linear-gradient(var(--color-p), transparent, rgb(105, 161, 151)), url(./media/suv.png);
 }
 
 .slide-1,
@@ -67,9 +73,53 @@ body {
 
 /* HEADER */
 .imgHeader {
+    background: url(./media/autometa.png);
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
     box-shadow: 5px 5px 5px var(--color-s);
     border-radius: 20px;
 }
+
+/* Stile di base del bottone */
+.elegant-btn {
+    padding: 10px 10px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 50px;  /* Forma arrotondata */
+    background-color: rgb(38, 20, 71);  /* Colore di background */
+    color: rgb(255, 251, 255);  /* Colore del testo */
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;  /* Transizione per tutte le proprietà */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover: animazione per cambiare il colore di sfondo e aggiungere ombra */
+.elegant-btn:hover {
+    background-color: rgb(255, 251, 255);  /* Colore di sfondo al passaggio del mouse */
+    color: rgb(38, 20, 71);  /* Cambia il colore del testo */
+    transform: scale(1.1);  /* Aumenta leggermente le dimensioni */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Ombra più prominente */
+    border-color: rgb(38, 20, 71);  /* Colore del bordo al passaggio del mouse */
+}
+
+/* Focus (quando il bottone è selezionato) */
+.elegant-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(38, 20, 71, 0.3);  /* Ombra al focus */
+}
+
+/* SEZIONE ULTIME AUTO */
+.img-last-cars {
+    height: 350px;
+    background-position: center;
+}
+
 /* SEZIONE CATEGORIE */
 .blood-shadow {
     text-shadow: 2px 2px 5px var(--color-s);
@@ -77,26 +127,69 @@ body {
 }
 
 .box-category {
-    margin-top: 10vh;
+    background: linear-gradient(rgb(105, 161, 151, 0.6),rgb(105, 161, 151, 0.6)), url(./media/mercedes.png);
+    background-position: center;
+    background-size: cover;
+    color: var(--color-a);
+    margin-top: 5vh;
     background-color: var(--color-p);
-    aspect-ratio: 1.5;
+    aspect-ratio: 1;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-    border-radius: 2%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 30px -7px;
+    border-radius: 10%;
 
 }
 
-.cat-bg {
-    margin-top: 10vh;
-    width: 100%;
-    aspect-ratio: 1.5;
-    background: linear-gradient(rgba(6, 24, 21, 0.446),transparent, rgba(105, 161, 151, 0.44)), url(https://picsum.photos/200);
-    background-position: center;
+.box-category > h3 {
+    font-size: calc(10px + 1,5vw);
+}
+
+/* SEZIONE NUMERI */
+.bg-numeri {
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(105, 161, 151), rgb(105, 161, 151, 0.6)), url(./media/bgNostriNum.png);
     background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 2%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+    background-position: bottom;
+    padding-left: 10vw;
 }
+
+.box-numeri {
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--color-a);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--color-a);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* MEDIA QUERIES */
+
+/* SMARTPHONE */
+
+@media screen and (max-width: 991px) {
+    /* .bg-smartphone{
+        background: linear-gradient(rgb(105, 161, 151)5%, rgb(105, 161, 151, 0.8)80%, rgb(105, 161, 151)95%), url(./media/autometa.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    } */
+
+    .nav-scrolled {
+        margin: 0;
+        border: none;
+        border-bottom: 2px solid var(--color-s);
+        border-radius: 0 0 10px 10px;
+        backdrop-filter: blur(50px);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    }
+}
+

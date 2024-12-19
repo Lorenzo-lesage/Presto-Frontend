@@ -15,7 +15,7 @@
     <!-- MY CSS -->
      <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
+  <body class="body-bg">
     <!-- NAVBAR -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top transition">
         <div class="container-fluid">
@@ -23,7 +23,7 @@
             <img src="./media/logo2.png" alt="" id="navbar-brand" class="logo1">
             <p class="m-0">Home</p>
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button id="buttonNav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,26 +44,26 @@
     <!-- /NAVBAR -->
 
     <!-- SEZIONE CAROSELLO -->
-    <div class="container-fluid my-3">
+    <div class="container-fluid mt-3">
         <div class="row">
             <div class="col-12 p-0">
                 <!-- CAROUSEL -->
                 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
                     data-bs-pause="false">
                     <div class="carousel-inner">
-                        <div class="carousel-item active slide-1" data-bs-interval="2000"> <!-- SLIDE 1 -->
+                        <div class="carousel-item active slide-1" data-bs-interval="4000"> <!-- SLIDE 1 -->
                             <div class="carousel-caption d-none d-md-block">
                               <h5 class="title display-1">Super Car</h5>
                               <p class="title fs-3">Some representative placeholder content for the first slide.</p>
                             </div>
                           </div>
-                          <div class="carousel-item slide-2" data-bs-interval="2000"> <!-- SLIDE 3-->
+                          <div class="carousel-item slide-2" data-bs-interval="4000"> <!-- SLIDE 3-->
                             <div class="carousel-caption d-none d-md-block">
                               <h5 class="title display-1">Auto d'epoca</h5>
                               <p class="title fs-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                             </div>
                           </div>
-                          <div class="carousel-item slide-3" data-bs-interval="2000"> <!-- SLIDE 3 -->
+                          <div class="carousel-item slide-3" data-bs-interval="4000"> <!-- SLIDE 3 -->
                             <div class="carousel-caption d-none d-md-block">
                               <h5 class="title display-1">Suv</h5>
                               <p class="title fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -80,83 +80,72 @@
 
     <!-- HEADER -->
      <header class="container-fluid mb-5">
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center text-center p-5" data-aos="fade-right" data-aos-delay="300">
-                <h1 class="display-2 title">LOREM IPSUM DOLOR LOREM</h1>
-                <p class="my-5 fs-5">
+        <div class="row d-flex justify-content-evenly vh-lg-100 bg-smartphone vh-100">
+            <div class="col-12 col-lg-4 d-flex flex-column justify-content-center align-items-center text-center p-3 overflow-hidden">
+                <h1 class="display-2 title my-5" data-aos="fade-right" data-aos-delay="100">LOREM IPSUM DOLOR LOREM</h1>
+                <p class="my-5 fs-5" data-aos="fade-right" data-aos-delay="200">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facere aspernatur numquam rem eaque. Error illo cupiditate eius reiciendis mollitia unde quis beatae nisi natus rerum? Aspernatur distinctio quo consequuntur.
                 </p>
-                <div>
-                    <button type="button" class="btn btn-primary mx-3">SCEGLI ORA</button>
-                    <button type="button" class="btn btn-primary mx-3">ESPLORA</button>
+                <div class="my-2  py-3 w-100 d-flex justify-content-evenly overflow-hidden">
+                    <button class="elegant-btn mx-1" data-aos="fade-right" data-aos-delay="300">Scegli ora</button>
+                    <button class="elegant-btn mx-1" data-aos="fade-left" data-aos-delay="300">Esplora</button>
                 </div>
             </div>
-            <div class="col-12 col-md-6 p-5">
-                <img src="https://picsum.photos/200" alt="" class="w-100 imgHeader" data-aos="fade-left" data-aos-delay="500">
+            <div class="col-12 col-md-6 p-5 overflow-hidden d-none d-lg-block">
+               <div  class="imgHeader" data-aos="fade-left" data-aos-delay="300"></div>
             </div>
         </div>
      </header>
     <!-- /HEADER -->
 
+    <!-- SEZIONI ULTIME AUTO -->
+     <section class="container">
+        <div class="row">
+            <div class="col-12 overflow-hidden">
+                <h2 class="title text-center display-1 blood-shadow" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="400">ULTIME AUTO</h2>
+            </div>
+        </div>
+        <div class="row my-5 justify-content-evenly" id="cardsWrapper" data-aos="zoom-in" data-aos-delay="500">
+           
+        </div>
+     </section>
+    <!-- /SEZIONI ULTIME AUTO -->
+
     <!-- SEZIONE CATEGORIE -->
      <section class="container my-5">
         <div class="row">
-            <div class="col-12">
-                <h2 class="title text-center display-1 blood-shadow" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="800">CATEGORIE</h2>
+            <div class="col-12 overflow-hidden my-5">
+                <h2 class="title text-center display-1 blood-shadow" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="400">CATEGORIE</h2>
             </div>
         </div>
         <div class="row d-flex justify-content-evenly overflow-hidden">
             <div class="col-6 col-md-5 p-md-5">
-                <div class="box-category" data-aos="zoom-out-right">
+                <div class="box-category" data-aos="fade-right" data-aos-delay="200">
                     <h3>CAT-1</h3>
                 </div>
             </div>
             <div class="col-6 col-md-5 p-md-5">
-                <div class="cat-bg" data-aos="zoom-out-left" data-aos-delay="200">
-                </div>
-            </div>
-            <div class="col-6 col-md-5 p-md-5">
-                <div class="cat-bg" data-aos="flip-right" data-aos-delay="400">
-                </div>
-            </div>
-            <div class="col-6 col-md-5 p-md-5">
-                <div class="box-category" data-aos="flip-left" data-aos-delay="600">
+                <div class="box-category" data-aos="fade-left" data-aos-delay="400">
                     <h3>CAT-2</h3>
                 </div>
             </div>
             <div class="col-6 col-md-5 p-md-5">
-                <div class="box-category" data-aos="zoom-out-right">
+                <div class="box-category" data-aos="fade-right" data-aos-delay="200">
                     <h3>CAT-3</h3>
                 </div>
             </div>
             <div class="col-6 col-md-5 p-md-5">
-                <div class="cat-bg" data-aos="zoom-out-left" data-aos-delay="200">
-                </div>
-            </div>
-            <div class="col-6 col-md-5 p-md-5">
-                <div class="cat-bg" ata-aos="zoom-out-right" data-aos-delay="800">
-                </div>
-            </div>
-            <div class="col-6 col-md-5 p-md-5">
-                <div class="box-category" data-aos="flip-right" data-aos-delay="400">
+                <div class="box-category" data-aos="fade-left" data-aos-delay="400">
                     <h3>CAT-4</h3>
                 </div>
             </div>
             <div class="col-6 col-md-5 p-md-5">
-                <div class="box-category" data-aos="fade-right" data-aos-delay="400">
+                <div class="box-category" data-aos="fade-right" data-aos-delay="200">
                     <h3>CAT-5</h3>
                 </div>
             </div>
-            <div class="col-6 col-md-5 p-md-5">
-                <div class="cat-bg" data-aos="fade-left" data-aos-delay="600">
-                </div>
-            </div>
-            <div class="col-6 col-md-5 p-md-5">
-                <div class="cat-bg" data-aos="fade-left" data-aos-delay="400">
-                </div>
-            </div>
             <div class="col-6 col-md-5 p-md-5 mb-5">
-                <div class="box-category" data-aos="fade-right" data-aos-delay="600">
+                <div class="box-category" data-aos="fade-left" data-aos-delay="400">
                     <h3>CAT-6</h3>
                 </div>
             </div>
@@ -165,29 +154,25 @@
     <!-- /SEZIONE CATEGORIE -->
 
     <!-- SEZIONE I NOSTRI NUMERI -->
-     <section class="container my-5">
+     <section class="container-fluid mt-5">
         <div class="row">
             <div class="col-12 mt-5">
-                <h2 class="title text-center display-1 blood-shadow">I NOSTRI NUMERI</h2>
+                <h2 class="title text-center display-1 blood-shadow mb-0">I NOSTRI NUMERI</h2>
             </div>
         </div>
-        <div class="row justify-content-evenly my-5">
-            <div class="col-12 col-md-3">
+        <div class="row bg-numeri">
+            <div class="col-12 h-100 col-md-3 d-flex flex-column justify-content-evenly">
                 <div class="box-numeri">
-                    <h4>Numero Auto</h4>
-                    <p id="autoNum"></p>
+                    <h4 class="m-0">Numero Auto</h4>
+                    <p id="autoNum" class="m-0"></p>
                 </div>
-            </div>
-            <div class="col-12 col-md-3">
                 <div class="box-numeri">
-                    <h4>Clienti soddisfatti</h4>
-                    <p id="clientNum"></p>
+                    <h4 class="m-0">Clienti soddisfatti</h4>
+                    <p id="clientNum" class="m-0"></p>
                 </div>
-            </div>
-            <div class="col-12 col-md-3">
                 <div class="box-numeri">
-                    <h4>Accessori</h4>
-                    <p id="accessoriNum"></p>
+                    <h4 class="m-0">Accessori</h4>
+                    <p id="accessoriNum" class="m-0"></p>
                 </div>
             </div>
         </div>
