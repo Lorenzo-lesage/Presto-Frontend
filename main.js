@@ -110,13 +110,13 @@ cars.forEach( (car, i) => {
         let div = document.createElement("div")
         div.classList.add("col-12", "col-md-4")
         div.innerHTML = `
-                            <div class="card-custom my-2 text-center">
+                            <div class="card-custom my-3 text-center">
                                 <img src=${car.img} class="card-img-top img-last-cars" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title my-3">Marca: ${car.Marca}</h5>
                                     <p class="card-text">Modello: ${car.Modello}</p>
                                     <p class="card-text">Prezzo: $ ${car.Prezzo}</p>
-                                    <button class="elegant-btn">Acquista</button>
+                                    <button class="elegant-btn">Acquista<span class="ms-2">></span></button>
                                 </div>
                             </div>
         `
@@ -124,3 +124,7 @@ cars.forEach( (car, i) => {
     }
     
 })
+
+
+
+
