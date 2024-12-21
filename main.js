@@ -116,7 +116,7 @@ cars.forEach( (car, i) => {
                                     <h5 class="card-title my-3">Marca: ${car.Marca}</h5>
                                     <p class="card-text">Modello: ${car.Modello}</p>
                                     <p class="card-text">Prezzo: $ ${car.Prezzo}</p>
-                                    <button class="elegant-btn">Acquista<span class="ms-2">></span></button>
+                                    <button class="elegant-btn w-75">Acquista<span class="ms-2">></span></button>
                                 </div>
                             </div>
         `
@@ -125,6 +125,16 @@ cars.forEach( (car, i) => {
     
 })
 
+// CURSOR POINTER ON CARD CATEGORY
 
+let boxCategory = document.querySelectorAll(".box-category");
 
+boxCategory.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.classList.add('custom-cursor'); // Aggiungi il cursore personalizzato
+    });
 
+    card.addEventListener('mouseleave', () => {
+        card.classList.remove('custom-cursor'); // Rimuovi il cursore personalizzato
+    });
+});

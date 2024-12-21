@@ -174,16 +174,46 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 30px -7px;
     border-radius: 10px;
-    border: 10px solid var(--color-a);
+    border: 2px solid var(--color-a);
     transition: transform 0.3s ease;
 }
 
-.box-category:hover {
-    transform: scale(1.05);
+
+/* Aggiungi un cursore personalizzato quando il mouse è sopra la card */
+.carousel-item .box-category.custom-cursor {
+    cursor: pointer; 
 }
+
+/* Aggiungi un effetto di trasformazione o ombra per una miglior interazione */
+.carousel-item .box-category:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Colore degli indicatori inattivi */
+.carousel-indicators button {
+    background-color: rgb(38, 20, 71, 0.9) !important; /* Colore degli indicatori inattivi */
+    width: 10%!important;
+    height: 5px !important;
+    border-radius: 5px !important; /* Rende gli indicatori rotondi */
+    transition: background-color  !important; /* Transizione fluida per il cambio di colore */
+    border: none !important; /* Rimuove il bordo */
+}
+
+/* Colore degli indicatori attivi */
+.carousel-indicators .active {
+    background-color:var(--color-s) !important; /* Colore per l'indicatore attivo */
+}
+
+/* Colore al passaggio del mouse sugli indicatori */
+.carousel-indicators button:hover {
+    background-color: var(--color-p) !important; /* Colore al passaggio del mouse */
+}
+
+
 
 .box-superCar {
     background: linear-gradient(rgb(105, 161, 151, 0.2),rgb(105, 161, 151, 0.2)), url(./media/lusso.png);
