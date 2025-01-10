@@ -30,6 +30,11 @@ body {
     transition: 0.5s;
 }
 
+.bg-s {
+    background-color: rgb(38, 20, 71, 0.9);
+    color: white;
+}
+
 /* NAVBAR */
 .logo1 {
     width: 50px;
@@ -84,8 +89,8 @@ body {
 
 /* Stile di base del bottone */
 .elegant-btn {
-    padding: 10px 10px;
-    width: 200px;
+    padding: 10px 0px;
+    width: 190px;
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -103,7 +108,7 @@ body {
 .elegant-btn:hover {
     background-color: rgb(255, 251, 255);  /* Colore di sfondo al passaggio del mouse */
     color: rgb(38, 20, 71);  /* Cambia il colore del testo */
-    transform: scale(1.1);  /* Aumenta leggermente le dimensioni */
+    transform: scale(0.8);  /* Aumenta leggermente le dimensioni */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Ombra più prominente */
     border-color: rgb(38, 20, 71);  /* Colore del bordo al passaggio del mouse */
 }
@@ -124,10 +129,10 @@ body {
 }
 
 .img-last-cars {
-    height: 350px;
+    height: 240px;
     background-position: center;
     border: 2px solid var(--color-s);
-    border-radius: 5px 30px 0 0;
+    border-radius: 30px 30px 10px 10px;
     box-shadow: 2px 2px 5px var(--color-s);
     border: 2px solid var(--color-a);
     object-fit: cover;
@@ -135,25 +140,15 @@ body {
 }
 
 .card-custom {
+    height: auto;
     background-color: var(--color-s);
     color: var(--color-a);
     backdrop-filter: blur(10px);
-    padding: 15px;
-    border-radius: 5px 30px 5px 30px;
+    border-radius: 30px;
     box-shadow: rgb(38, 57, 77) 0px 5px 10px;
-    margin: 0 1vw;
     border: 1px solid var(--color-a);
 }
 /* SEZIONE CATEGORIE */
-.carousel-custom{
-    background-color: var(--color-a);
-    border: 10px solid var(--color-a);
-    border-radius: 30px;
-}
-
-.carousel-item {
-    background-color: var(--color-s);
-}
 
 .blood-shadow {
     text-shadow: 2px 2px 5px var(--color-s);
@@ -161,14 +156,14 @@ body {
 }
 
 .box-category > h3 {
-    backdrop-filter: blur(2px);
+    width: 100%;
+    background-color: var(--color-p);
     padding: 9px 6px;
-    border-radius: 40px; 
     font-size: calc(10px + 1vw);
     font-family: "Bebas Neue", serif;
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: 4px;
-    margin: 0;
+    text-align: center;
 }
 .box-category {
     color: var(--color-);
@@ -179,40 +174,48 @@ body {
     align-items: start;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 30px -7px;
     border-radius: 10px;
-    border: 2px solid var(--color-a);
-    transition: transform 0.3s ease;
 }
 
 
-/* Aggiungi un cursore personalizzato quando il mouse è sopra la card */
-.carousel-item .box-category.custom-cursor {
-    cursor: pointer; 
+
+/* SWIPER  */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 50vh;
+    height: 50wh;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%; 
+    color: black;
+  }
+
+  .swiper-button-next {
+    color: var(--color-s);
+  }
+
+  .swiper-button-prev {
+    color: var(--color-s);
+  }
+
+/* Cambia il colore dei pallini di paginazione (in stato normale) */
+.swiper-pagination-bullet {
+    background-color: var(--color-a);  /* Cambia questo colore come preferisci */
 }
 
-/* Aggiungi un effetto di trasformazione o ombra per una miglior interazione */
-.carousel-item .box-category:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Colore degli indicatori inattivi */
-.carousel-indicators button {
-    background-color: rgb(38, 20, 71, 0.9) !important; /* Colore degli indicatori inattivi */
-    width: 10%!important;
-    height: 5px !important;
-    border-radius: 5px !important; /* Rende gli indicatori rotondi */
-    transition: background-color  !important; /* Transizione fluida per il cambio di colore */
-    border: none !important; /* Rimuove il bordo */
-}
-
-/* Colore degli indicatori attivi */
-.carousel-indicators .active {
-    background-color:var(--color-s) !important; /* Colore per l'indicatore attivo */
-}
-
-/* Colore al passaggio del mouse sugli indicatori */
-.carousel-indicators button:hover {
-    background-color: var(--color-p) !important; /* Colore al passaggio del mouse */
+/* Cambia il colore del pallino attivo */
+.swiper-pagination-bullet-active {
+    background-color: var(--color-s);  /* Cambia questo colore come preferisci */
 }
 
 
@@ -255,11 +258,14 @@ body {
 }
 
 /* SEZIONE NUMERI */
-.bg-numeri {
-    height: 100vh;
+
+.bg-num-footer {
     background: linear-gradient(90deg, rgb(105, 161, 151), rgb(105, 161, 151, 0.6)), url(./media/bgNostriNum.png);
     background-size: cover;
     background-position: bottom;
+}
+.bg-numeri {
+    height: 100vh;
 }
 
 .box-numeri {
@@ -276,6 +282,62 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
+
+
+.swiper.mySwiper1 {
+    width: 70%;
+    height: 70vh;
+    margin-bottom: 30px; /* Spazio tra i due Swiper */
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .swiper-slide:nth-child(1n) {
+    background: url(media/autometa.png);
+  }
+
+  .swiper-slide:nth-child(2n) {
+    background: url(media/audi.png);
+  }
+
+  .swiper-slide:nth-child(3n) {
+    background: url(media/autometa.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+/* PAGINA PRODUCTS */
+
+.box-filters {
+    height: auto;
+    background: var(--color-p);
+    color: var(--color-s);
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid var(--color-s);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: sticky;
+    top: 125px;
+}
+
+.btn-order {
+    padding: 10px 5px;
+    width: 40%;
+    background-color: var(--color-s);
+    color: var(--color-p);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* /PAGINA PRODUCTS */
 
 /* MEDIA QUERIES */
 

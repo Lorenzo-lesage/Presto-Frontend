@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PRESTO FRONTEND</title>
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -112,118 +114,164 @@
     <!-- /SEZIONI ULTIME AUTO -->
 
     <!-- SEZIONE CATEGORIE -->
-    <section class="container my-5
+    <section class="container-fluid my-5">
         <div class="row my-5">
             <div class="col-12 overflow-hidden my-5">
                 <h2 class="title text-center display-1 blood-shadow" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="400">CATEGORIE</h2>
             </div>
         </div>
-        <div class="row d-flex justify-content-evenly overflow-hidden my-5 py-5">
-            <div class="col-12" data-aos="zoom-in" data-aos-delay="200">
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <!-- Indicatori del carosello -->
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper" data-aos="zoom-in" data-aos-delay="600">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box-category box-superCar3">
+                        <h3>suv</h3>
                     </div>
-                
-                    <!-- Carosello -->
-                    <div class="carousel-inner carousel-custom py-5">
-                      <!-- Primo slide -->
-                        <div class="carousel-item active">
-                            <div class="row d-flex justify-content-evenly m-5">
-                                <!-- Card 1 -->
-                                <div class="col-6 col-lg-4">
-                                    <div class="box-category box-superCar" id="cardLux">
-                                        <h3>Auto di lusso</h3>
-                                    </div>
-                                </div>   
-                                <!-- Card 2 -->
-                                <div class="col-6 col-lg-4">
-                                    <div class="box-category box-superCar1">
-                                        <h3>SuperCar</h3>
-                                    </div>
-                                </div>   
-                            </div>
-                        </div>    
-                            <!-- Secondo slide -->
-                        <div class="carousel-item">
-                            <div class="row d-flex justify-content-evenly m-5">
-                                <!-- Card 1 -->
-                                <div class="col-6 col-lg-4">
-                                    <div class="box-category box-superCar2">
-                                        <h3>auto d'epoca</h3>
-                                    </div>
-                                </div>   
-                                <!-- Card 2 -->
-                                <div class="col-6 col-lg-4">
-                                    <div class="box-category box-superCar3">
-                                        <h3>suv</h3>
-                                    </div>
-                                </div>   
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row d-flex justify-content-evenly m-5">
-                                <!-- Card 1 -->
-                                <div class="col-6 col-lg-4">
-                                    <div class="box-category box-superCar4">
-                                        <h3>elettriche</h3>
-                                    </div>
-                                </div>   
-                                <!-- Card 2 -->
-                                <div class="col-6 col-lg-4">
-                                    <div class="box-category box-superCar5">
-                                        <h3>usato</h3>
-                                    </div>
-                                </div>   
-                            </div>
-                        </div>          
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-category box-superCar" id="cardLux">
+                        <h3>Auto di lusso</h3>
                     </div>
-                
-                    <!-- Controlli del carosello -->
-                    <div class="carousel-control-prev" >
-                      <span class="carousel-control-prev-icon" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-category box-superCar1">
+                        <h3>SuperCar</h3>
                     </div>
-                    <div class="carousel-control-next">
-                      <span class="carousel-control-next-icon" aria-hidden="true" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"></span>
-                      <span class="visually-hidden">Next</span>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-category box-superCar2">
+                        <h3>auto d'epoca</h3>
                     </div>
-                  </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-category box-superCar4">
+                        <h3>elettriche</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box-category box-superCar5">
+                        <h3>usato</h3>
+                    </div>
+                </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
+    <!-- Swiper JS -->
     </section>
     <!-- /SEZIONE CATEGORIE -->
 
     <!-- SEZIONE I NOSTRI NUMERI -->
-     <section class="container-fluid mt-5">
+    <section class="container-fluid mt-5 p-0">
         <div class="row">
             <div class="col-12 mt-5">
-                <h2 class="title text-center display-1 blood-shadow mb-0">I NOSTRI NUMERI</h2>
+                <h2 class="title text-center display-1 mb-0 blood-shadow">I NOSTRI NUMERI E RECENSIONI</h2>
             </div>
         </div>
-        <div class="row bg-numeri px-lg-5">
-            <div class="col-12 h-100 col-md-3 d-flex flex-column justify-content-evenly">
-                <div class="box-numeri">
-                    <h4 class="m-0">Numero Auto</h4>
-                    <p id="autoNum" class="m-0"></p>
+        <div class="bg-num-footer">
+            <div class="row px-lg-5 d-flex justify-content-evenly">
+                <div class="col-12 h-100 col-md-3">
+                    <div class="d-flex flex-column justify-content-between">
+                        <div class="box-numeri my-5">
+                            <h4 class="m-0">Numero Auto</h4>
+                            <p id="autoNum" class="m-0"></p>
+                        </div>
+                        <div class="box-numeri mb-5">
+                            <h4 class="m-0">Clienti soddisfatti</h4>
+                            <p id="clientNum" class="m-0"></p>
+                        </div>
+                        <div class="box-numeri mb-5">
+                            <h4 class="m-0">Accessori</h4>
+                            <p id="accessoriNum" class="m-0"></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="box-numeri">
-                    <h4 class="m-0">Clienti soddisfatti</h4>
-                    <p id="clientNum" class="m-0"></p>
+                <div class="col-12 col-md-6">
+                    <div class="swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">Slide 1</div>
+                          <div class="swiper-slide">Slide 2</div>
+                          <div class="swiper-slide">Slide 3</div>
+                          <div class="swiper-slide">Slide 4</div>
+                          <div class="swiper-slide">Slide 5</div>
+                          <div class="swiper-slide">Slide 6</div>
+                          <div class="swiper-slide">Slide 7</div>
+                          <div class="swiper-slide">Slide 8</div>
+                          <div class="swiper-slide">Slide 9</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box-numeri">
-                    <h4 class="m-0">Accessori</h4>
-                    <p id="accessoriNum" class="m-0"></p>
+                <!-- FOOTER -->
+                <div class="container-fluid px-lg-5">
+                    <footer class="mt-5 pt-5 px-2 mx-lg-5">
+                        <div class="row my-3 my-lg-none d-flex justify-content-evenly">
+                            <div class="col-4 col-md-2 mb-3">
+                            <h5 class="title">Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                            </ul>
+                            </div>
+                    
+                            <div class="col-4 col-md-2 mb-3">
+                            <h5 class="title">Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                            </ul>
+                            </div>
+                    
+                            <div class="col-4 col-md-2 mb-3">
+                            <h5 class="title">Section</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                            </ul>
+                            </div>
+                    
+                            <div class="col-md-5 offset-md-1 mb-3">
+                            <form>
+                                <h5>Subscribe to our newsletter</h5>
+                                <p>Monthly digest of what's new and exciting from us.</p>
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="elegant-btn" type="button">Subscribe</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    
+                        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                            <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+                            <ul class="list-unstyled d-flex">
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                            </ul>
+                        </div>
+                    </footer>
                 </div>
+                <!-- /FOOTER -->
             </div>
         </div>
-     </section>
+    </section>
     <!-- /SEZIONE I NOSTRI NUMERI -->
 
-
+    
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
