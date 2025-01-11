@@ -172,3 +172,75 @@ const swiper = new Swiper(".mySwiper", {
     effect: "cards",
     grabCursor: true,
   });
+
+
+//   STELLE
+
+// Funzione per caricare le recensioni da un file JSON
+function loadReviews() {
+    fetch('reviews.json')
+      .then(response => response.json())  // Parse del file JSON
+      .then(reviews => {
+        const reviewsContainer = document.getElementById('reviews-container');
+        reviews.forEach(review => {
+          const swiperSlide = document.createElement('div');
+          swiperSlide.classList.add('swiper-slide');
+          
+          swiperSlide.innerHTML = `
+                    <div class="review">
+                        <div class="review-details p-lg-5">
+                            <div class="d-flex align-items-center">
+                                <h3>${review.nome} ${review.cognome}</h3>
+                                <img src="${review.img}" alt="${review.nome} ${review.cognome}" class="reviewer-img">
+                            </div>
+                            <div class="stars">
+                            ${generateStars(review.voto)}  <!-- Genera le stelle in base al voto -->
+                            </div>
+                            <p>${review.recensione}</p>
+                        </div>
+                    </div>
+          `;
+          
+          reviewsContainer.appendChild(swiperSlide); // Aggiungi la slide al contenitore
+        });
+  
+        // Inizializza il Swiper
+        new Swiper('.swiper.mySwiper1', {
+          effect: 'cards',  // Puoi personalizzare l'effetto dello Swiper come desideri
+          grabCursor: true,
+          slidesPerView: 1,  // Puoi modificare il numero di slide visibili per volta
+        });
+      })
+      .catch(error => console.error('Errore nel caricamento delle recensioni:', error));
+  }
+  
+  // Funzione per generare le stelle in base al voto
+  function generateStars(voto) {
+    const fullStars = Math.floor(voto);  // Numero di stelle piene
+    const halfStar = voto % 1 !== 0;     // Verifica se c'è una mezza stella
+    let starsHTML = '';
+    
+    // Stelle piene
+    for (let i = 0; i < fullStars; i++) {
+      starsHTML += `<span class="star selected">&#9733;</span>`; // stella piena
+    }
+    
+    // Mezza stella (se presente)
+    if (halfStar) {
+      starsHTML += `<span class="star selected">&#9734;</span>`; // mezza stella
+    }
+    
+    // Stelle vuote
+    const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
+    for (let i = 0; i < emptyStars; i++) {
+      starsHTML += `<span class="star">&#9734;</span>`; // stella vuota
+    }
+    
+    return starsHTML;
+  }
+  
+  // Carica le recensioni al caricamento della pagina
+  document.addEventListener('DOMContentLoaded', loadReviews);
+  
+  
+

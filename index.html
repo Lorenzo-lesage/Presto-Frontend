@@ -114,7 +114,7 @@
     <!-- /SEZIONI ULTIME AUTO -->
 
     <!-- SEZIONE CATEGORIE -->
-    <section class="container-fluid my-5">
+    <section class="container my-5 overflow-hidden">
         <div class="row my-5">
             <div class="col-12 overflow-hidden my-5">
                 <h2 class="title text-center display-1 blood-shadow" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="400">CATEGORIE</h2>
@@ -124,7 +124,7 @@
         <!-- Swiper -->
         <div class="swiper mySwiper" data-aos="zoom-in" data-aos-delay="600">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide bg-swiper">
                     <div class="box-category box-superCar3">
                         <h3>suv</h3>
                     </div>
@@ -170,37 +170,27 @@
                 <h2 class="title text-center display-1 mb-0 blood-shadow">I NOSTRI NUMERI E RECENSIONI</h2>
             </div>
         </div>
-        <div class="bg-num-footer">
-            <div class="row px-lg-5 d-flex justify-content-evenly">
-                <div class="col-12 h-100 col-md-3">
-                    <div class="d-flex flex-column justify-content-between">
-                        <div class="box-numeri my-5">
-                            <h4 class="m-0">Numero Auto</h4>
-                            <p id="autoNum" class="m-0"></p>
-                        </div>
-                        <div class="box-numeri mb-5">
-                            <h4 class="m-0">Clienti soddisfatti</h4>
-                            <p id="clientNum" class="m-0"></p>
-                        </div>
-                        <div class="box-numeri mb-5">
-                            <h4 class="m-0">Accessori</h4>
-                            <p id="accessoriNum" class="m-0"></p>
-                        </div>
+        <div class="bg-num-footer p-5">
+            <div class="row px-lg-5 d-flex justify-content-evenly py-5">
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-evenly">
+                    <div class="box-numeri my-5">
+                        <h4 class="m-0">Numero Auto</h4>
+                        <p id="autoNum" class="m-0"></p>
+                    </div>
+                    <div class="box-numeri mb-5">
+                        <h4 class="m-0">Clienti soddisfatti</h4>
+                        <p id="clientNum" class="m-0"></p>
+                    </div>
+                    <div class="box-numeri mb-5">
+                        <h4 class="m-0">Accessori</h4>
+                        <p id="accessoriNum" class="m-0"></p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="swiper mySwiper1">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">Slide 1</div>
-                          <div class="swiper-slide">Slide 2</div>
-                          <div class="swiper-slide">Slide 3</div>
-                          <div class="swiper-slide">Slide 4</div>
-                          <div class="swiper-slide">Slide 5</div>
-                          <div class="swiper-slide">Slide 6</div>
-                          <div class="swiper-slide">Slide 7</div>
-                          <div class="swiper-slide">Slide 8</div>
-                          <div class="swiper-slide">Slide 9</div>
-                        </div>
+                <div class="col-12 col-md-5 overflow-hidden">
+                    <div class="swiper mySwiper1" data-aos="fade-left" data-aos-delay="400">
+                        <h2 class="text-center title">Recensioni</h2>
+                        <!-- Il contenitore per le recensioni dinamiche -->
+                        <div class="swiper-wrapper" id="reviews-container"></div>
                     </div>
                 </div>
                 <!-- FOOTER -->
@@ -283,3 +273,5 @@
      <script src="./main.js"></script>
   </body>
 </html>
+
+

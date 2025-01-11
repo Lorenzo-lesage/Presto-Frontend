@@ -15,3 +15,6 @@
     - Evento scroll
     - AoS
     - Chiamate asincrone ( SetInterval )
+
+
+    {"nome": "antonella", "cognome": "rossi","img": "https://picsum.photos/200", "voto": 4,5, "recensione": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem animi harum repellendus saepe, inventore recusandae." }

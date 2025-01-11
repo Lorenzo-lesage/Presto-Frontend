@@ -14,9 +14,10 @@
   font-family: "Open Sans", serif;
 }
 
-body {
+html, body {
     background-color: var(--color-p);
     color: var(--color-s);
+    overflow-x: hidden; /* Impedisce lo scroll orizzontale */
 }
 
 .body-bg {
@@ -179,7 +180,7 @@ body {
 
 
 /* SWIPER  */
-.swiper {
+.swiper.mySwiper{
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -286,33 +287,62 @@ body {
 
 .swiper.mySwiper1 {
     width: 70%;
-    height: 70vh;
+    height: 60vh;
     margin-bottom: 30px; /* Spazio tra i due Swiper */
   }
-
-  .swiper-slide {
+  .swiper.mySwiper1 .swiper-slide {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 18px;
     font-size: 22px;
     font-weight: bold;
     color: #fff;
+    padding: 5px;
+    background-color: var(--color-s);
   }
 
-  .swiper-slide:nth-child(1n) {
-    background: url(media/autometa.png);
-  }
+  
 
-  .swiper-slide:nth-child(2n) {
-    background: url(media/audi.png);
-  }
+  
 
-  .swiper-slide:nth-child(3n) {
-    background: url(media/autometa.png);
-    background-position: center;
-    background-size: cover;
+  
+
+
+  /* STELLE */
+  .reviewer-img {
+    width: 50px!important;   /* Modifica la larghezza dell'immagine */
+    aspect-ratio: 1;
+    object-fit: cover; /* Fa sì che l'immagine riempia l'area senza distorsioni */
+    border-radius: 50%; /* Se vuoi farla rotonda */
+    margin: 10px; /* Per aggiungere spazio tra l'immagine e il testo */
   }
+  
+  
+  .review {
+    display: flex;
+  }
+  
+  .review-details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .stars {
+    font-size: 1.5rem;
+    color: gold;
+  }
+  
+  .star {
+    color: lightgray;
+  }
+  .star.selected {
+    color: gold;
+  }
+  
+
 
 /* PAGINA PRODUCTS */
 

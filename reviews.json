@@ -1,0 +1,72 @@
+[
+    {
+        "nome": "Antonella",
+        "cognome": "Rossi",
+        "img": "https://picsum.photos/200",
+        "voto": 4.5,
+        "recensione": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem animi harum repellendus saepe, inventore recusandae."
+    },
+    {
+        "nome": "Marco",
+        "cognome": "Bianchi",
+        "img": "https://picsum.photos/201",
+        "voto": 3,
+        "recensione": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "nome": "Giulia",
+        "cognome": "Verdi",
+        "img": "https://picsum.photos/202",
+        "voto": 5,
+        "recensione": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+    },
+    {
+        "nome": "Luca",
+        "cognome": "Neri",
+        "img": "https://picsum.photos/203",
+        "voto": 2.5,
+        "recensione": "Fusce tincidunt, ligula ut sodales fermentum, augue felis tincidunt magna."
+    },
+    {
+        "nome": "Elena",
+        "cognome": "Gialli",
+        "img": "https://picsum.photos/204",
+        "voto": 4,
+        "recensione": "Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula."
+    },
+    {
+        "nome": "Francesco",
+        "cognome": "Rossi",
+        "img": "https://picsum.photos/205",
+        "voto": 3.5,
+        "recensione": "Cras elementum pulvinar etiam non quam lacus suspendisse faucibus."
+    },
+    {
+        "nome": "Federica",
+        "cognome": "Blu",
+        "img": "https://picsum.photos/206",
+        "voto": 1.5,
+        "recensione": "Vel orci porta non pulvinar neque laoreet sit amet."
+    },
+    {
+        "nome": "Andrea",
+        "cognome": "Verde",
+        "img": "https://picsum.photos/207",
+        "voto": 5,
+        "recensione": "Massa tincidunt dui ut ornare lectus sit amet est placerat."
+    },
+    {
+        "nome": "Sara",
+        "cognome": "Arancio",
+        "img": "https://picsum.photos/208",
+        "voto": 4,
+        "recensione": "Amet est placerat in egestas purus viverra accumsan."
+    },
+    {
+        "nome": "Paolo",
+        "cognome": "Ferri",
+        "img": "https://picsum.photos/209",
+        "voto": 3,
+        "recensione": "Velit scelerisque in dictum non consectetur a erat."
+    }
+]
