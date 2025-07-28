@@ -65,7 +65,7 @@ html, body {
 }
 
 .slide-31 {
-    background: linear-gradient(var(--color-p), transparent, rgb(105, 161, 151)), url(./media/suv.png);
+    background: linear-gradient(var(--color-p), transparent, rgb(105, 161, 151)), url(./media/suvBg.png);
 }
 
 .slide-11,
@@ -123,10 +123,7 @@ html, body {
 /* SEZIONE ULTIME AUTO */
 .rowLastCar{
     padding: 30px 20px;
-    border: 1px solid var(--color-a);
-    border-radius: 30px;
     box-shadow: rgba(0, 0, 0) 0px 60px 40px -7px;
-    background-color: rgb(1, 9, 16);
 }
 
 .img-last-cars {
