@@ -11,7 +11,6 @@ window.addEventListener("scroll", ()=>{
     }
 }) 
 
-
 // BUTTON NAV COLLAPSE AT O Y
 let buttonNav = document.querySelector("#buttonNav")
 
@@ -25,8 +24,6 @@ buttonNav.addEventListener("click", () => {
         navbar.classList.add("nav-scrolled");
     }
 });
-
-
 
 let autoNum = document.querySelector("#autoNum")
 let clientNum = document.querySelector("#clientNum")
@@ -47,10 +44,6 @@ function createIntervalCustom(finalNumber, element, speed) {
     
 }
 
-
-
-
-
 // OBSERVER
 
 let isNotEntered = true
@@ -67,8 +60,6 @@ let observer = new IntersectionObserver((entries) => {
 })
 
 observer.observe(accessoriNum)
-
-
 
 let cars = [
     {
@@ -114,7 +105,7 @@ let cardsWrapper  = document.querySelector("#cardsWrapper")
 cars.forEach( (car, i) => {
     if(i >= cars.length - 3){
         let div = document.createElement("div")
-        div.classList.add("col-12", "col-md-4")
+        div.classList.add("col-12", "col-md-3")
         div.innerHTML = `
                             <div class="card-custom my-3 text-center">
                                 <img src=${car.img} class="card-img-top img-last-cars" alt="...">
@@ -122,7 +113,8 @@ cars.forEach( (car, i) => {
                                     <h5 class="card-title my-3">Marca: ${car.Marca}</h5>
                                     <p class="card-text">Modello: ${car.Modello}</p>
                                     <p class="card-text">Categoria: ${car.categoria}</p>
-                                    <p class="card-text">Prezzo: $ ${car.Prezzo}</p>
+                                <p class="card-text">Prezzo: € ${Number(car.Prezzo).toLocaleString("it-IT")}</p>
+
                                     <button class="elegant-btn w-75">Acquista<span class="ms-2">></span></button>
                                 </div>
                             </div>
@@ -133,7 +125,6 @@ cars.forEach( (car, i) => {
 })
 
 // CURSOR POINTER ON CARD CATEGORY
-
 let boxCategory = document.querySelectorAll(".box-category");
 
 boxCategory.forEach(card => {
@@ -175,7 +166,6 @@ const swiper = new Swiper(".mySwiper", {
 
 
 //   STELLE
-
 // Funzione per caricare le recensioni da un file JSON
 function loadReviews() {
     fetch('reviews.json')

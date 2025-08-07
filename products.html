@@ -22,13 +22,20 @@
 
     <!-- MY CSS -->
     <link rel="stylesheet" href="./style.css">
+
+    <!-- MY FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicoin/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicoin/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicoin/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
 </head>
 
 <body class="body-bg">
     <!-- NAVBAR -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top transition">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex justify-content-center align-items-center text-center navCustom" href="./index.html">
+            <a class="navbar-brand d-flex justify-content-center align-items-center text-center navCustom"
+                href="./index.html">
                 <img src="./media/logo2.png" alt="" id="navbar-brand" class="logo1">
                 <p class="m-0">Home</p>
             </a>
@@ -50,20 +57,19 @@
 
     <!-- SEZIONE CATEGORIE E FILTRI -->
     <section class="container my-5">
-        <div class="row">
+        <div class="row h-100">
             <!-- COLONNA FILTRI -->
-            <div class="col-12 col-md-3 position-relative">
-                <h2 class="text-center mb-5">FILTRI</h2>
-                <!-- FILTRO CATEGORIA -->
-                <div class="box-filters">
+            <!-- COLONNA FILTRI -->
+            <div class="col-12 col-md-3 mt-5">
+                <!-- ✅ sticky-wrapper DEVE stare direttamente dentro col-md-3 -->
+                <div class="sticky-wrapper">
+                    <!-- FILTRO CATEGORIA -->
                     <div>
                         <h3 class="text-center my-2 title">Filtro Categoria</h3>
                         <div id="categoryWrapper">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="All" checked>
-                                <label class="form-check-label" for="All">
-                                Tutte le Categorie
-                                </label>
+                                <label class="form-check-label" for="All">Tutte le Categorie</label>
                             </div>
                         </div>
                     </div>
@@ -71,7 +77,7 @@
                         <h3 class="text-center my-2 title">Filtro Prezzo</h3>
                         <div>
                             <label for="inputRangePrice" class="form-label" id="labelPrice">Example range</label>
-                            <input type="range" class="form-range" id="inputRangePrice" max="" min="" value="">
+                            <input type="range" class="form-range" id="inputRangePrice" max="" min="" value="euri">
                         </div>
                     </div>
                     <div>
@@ -87,11 +93,12 @@
                     </div>
                 </div>
             </div>
+
             <!-- COLONNA ARTICOLI -->
-             <div class="col-12 col-md-9">
+            <div class="col-12 col-md-9">
                 <h2 class="text-center mb-5">AUTO</h2>
                 <div id="carsWrapper" class="row"></div>
-             </div>
+            </div>
         </div>
     </section>
     <!-- /SEZIONE CATEGORIE E FILTRI -->
@@ -101,63 +108,69 @@
         <footer class="mt-5 pt-5 px-5 mx-5">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3">
-                <h5 class="title">Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
+                    <h5 class="title">Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
                 </div>
-        
+
                 <div class="col-6 col-md-2 mb-3">
-                <h5 class="title">Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
+                    <h5 class="title">Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
                 </div>
-        
+
                 <div class="col-6 col-md-2 mb-3">
-                <h5 class="title">Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
+                    <h5 class="title">Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
                 </div>
-        
+
                 <div class="col-md-5 offset-md-1 mb-3">
-                <form>
-                    <h5>Subscribe to our newsletter</h5>
-                    <p>Monthly digest of what's new and exciting from us.</p>
-                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                    <label for="newsletter1" class="visually-hidden">Email address</label>
-                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                    <button class="elegant-btn" type="button">Subscribe</button>
-                    </div>
-                </form>
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="elegant-btn" type="button">Subscribe</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        
+
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                 <p>&copy; 2022 Company, Inc. All rights reserved.</p>
                 <ul class="list-unstyled d-flex">
-                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-                <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook" />
+                            </svg></a></li>
                 </ul>
             </div>
         </footer>
     </div>
     <!-- /FOOTER -->
-     
+
 
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
