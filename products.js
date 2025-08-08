@@ -40,22 +40,22 @@ fetch("./auto.json")
                             <img src=${
                               el.img
                             } class="card-img-top img-last-cars" alt="...">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-center align-items-baseline gap-2">
-                                    <h5 class="card-title my-3">${el.Marca}</h5>
+                            <div class="card-body d-flex justify-content-center align-items-center flex-column p-2">
+                                <div class="d-flex justify-content-center align-items-baseline gap-2 border-bottom w-75 my-2 pb-1">
+                                    <h5 class="card-title fw-bold">${el.Marca}</h5>
                                     <p class="card-text">${el.Modello}</p>
                                 </div>
-                                <div class="d-flex justify-content-around align-items-baseline gap-2">
-                                <div class="border-1 border-black border rounded bg-danger px-2 py-1">
-                                <p class="card-text">${el.categoria}</p>
+                                <div class="d-flex justify-content-around align-items-baseline gap-2 mb-2">
+                                  <div class="border-1 border-black border rounded border-1 border-black px-2 py-1">
+                                    <p class="card-text fw-bold">${el.categoria}</p>
+                                  </div>
+                                  <div class="border-1 border-black border rounded bg-black px-2 py-1">
+                                    <p class="card-text fw-bold">€ ${Number(
+                                      el.Prezzo
+                                    ).toLocaleString("it-IT")}</p>
+                                  </div>
                                 </div>
-                                <div class="border-1 border-black border rounded bg-black px-2 py-1">
-                                <p class="card-text">€ ${Number(
-                                  el.Prezzo
-                                ).toLocaleString("it-IT")}</p>
-                                </div>
-                                </div>
-                                <button class="elegant-btn w-75" data-bs-toggle="modal" data-bs-target="#${el.Modello.replace(
+                                <button class="elegant-btn" data-bs-toggle="modal" data-bs-target="#${el.Modello.replace(
                                   / /g,
                                   "-"
                                 )}">Info</span></button>

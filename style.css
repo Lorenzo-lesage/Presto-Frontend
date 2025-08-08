@@ -90,17 +90,13 @@ html, body {
 
 /* Stile di base del bottone */
 .elegant-btn {
-    padding: 10px 0px;
-    width: 190px;
-    font-size: 20px;
+    width: 25%;
     font-weight: bold;
     text-transform: uppercase;
-    border: 2px solid transparent;
-    border-radius: 50px;  /* Forma arrotondata */
+    border-radius: 10px;  /* Forma arrotondata */
     background-color: rgb(38, 20, 71);  /* Colore di background */
     color: rgb(255, 251, 255);  /* Colore del testo */
     cursor: pointer;
-    outline: none;
     transition: all 0.3s ease;  /* Transizione per tutte le proprietà */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -109,7 +105,7 @@ html, body {
 .elegant-btn:hover {
     background-color: rgb(255, 251, 255);  /* Colore di sfondo al passaggio del mouse */
     color: rgb(38, 20, 71);  /* Cambia il colore del testo */
-    transform: scale(0.8);  /* Aumenta leggermente le dimensioni */
+    transform: scale(0.9);  /* Aumenta leggermente le dimensioni */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Ombra più prominente */
     border-color: rgb(38, 20, 71);  /* Colore del bordo al passaggio del mouse */
 }
@@ -131,7 +127,6 @@ html, body {
     background-color: var(--color-s);
     color: var(--color-a);
     border-radius: 10px;
-    box-shadow: rgb(38, 57, 77) 0px 5px 10px;
 }
 /* SEZIONE CATEGORIE */
 
@@ -335,6 +330,10 @@ html, body {
   top: 80px;
   padding: 1rem;
   z-index: 10;
+}
+
+.custom-align {
+    align-self: flex-start;
 }
 
 
